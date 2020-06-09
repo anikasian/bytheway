@@ -1,2 +1,2 @@
 # bytheway
-Roadtrip planning web-app.
+Roadtrip planner webapp
