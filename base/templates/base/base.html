@@ -20,11 +20,12 @@
 </head>
 <body>
     <ul>
-        <a href="#" style="font-weight: bold;">ByTheWay</a>
-        <li><a href="#login">Login</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#home">Home</a></li>
+        <a href="{% url 'base-home' %}" style="font-weight: bold;">ByTheWay</a>
+        <li><a href="{% url 'base-login' %}">Login</a></li>
+        <li><a href="{% url 'base-contact' %}">Contact</a></li>
+        <li><a href="{% url 'blog-all_blogs' %}">Blog</a></li>
+        <li><a href="{% url 'base-about' %}">About</a></li>
+        <li><a href="{% url 'base-home' %}">Home</a></li>
     </ul>
 
     <div class="container">

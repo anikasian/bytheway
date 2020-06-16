@@ -24,3 +24,15 @@ def home(request):
 def about(request):
     content = {"posts": POSTS}
     return render(request, "base/about.html", content)
+
+
+def contact(request):
+    return render(request, "base/contact.html")
+
+
+def login(request):
+    return render(request, "base/login.html")
+
+
+def blog(request):
+    return render(request, "blog/all_blogs.html")

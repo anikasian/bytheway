@@ -1,3 +1,7 @@
+*:focus {
+    outline: none;
+}
+
 body {
     background-color: #FBFCFC;
     background-image: url("../images/backgroundmap.png");
@@ -6,6 +10,30 @@ body {
     font-family: 'Open Sans', sans-serif;
 	line-height: 30px;
 	font-size: 16px;
+}
+
+h1 {
+    color: #FF9F1C;
+    font-size: 100px;
+    text-align: center;
+}
+
+h2 {
+    color: #225378;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3 {
+	color: #1695A3;
+	padding: 15px 5px;
+	font-size: 18px;
+}
+
+h4 {
+	padding: 15px 5px;
+	font-weight: 800;
+	text-transform: uppercase;
 }
 
 ul {
@@ -57,6 +85,7 @@ li a:hover, a:active {
 .main_desc_container {
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -65,8 +94,70 @@ li a:hover, a:active {
     text-align: center;
 }
 
-h1 {
-    color: #FF9F1C;
-    font-size: 100px;
+.search_container {
+    display: block;
+	float: center;
+	text-align: center;
+	margin: 20px auto;
+}
+
+table, th, td {
+    border: none;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+}
+
+input.search_bar, #start_search, #end_search {
+    width: 350px;
+	height: 40px;
+	display: block;
+    background: #FBFCFC;
+    background-repeat: no-repeat;
+    background-position: 2%;
+    background-size: contain;
+	border-top: 4px solid #FF9F1C;
+	border-bottom: 4px solid #FF9F1C;
+    padding-left: 42px;
+    font-size: 17px;
+	color: #63717f;
+}
+
+input#start_search {
+    background-image: url("../images/startdestination.png");
+	border-left: 4px solid #FF9F1C;
+	border-right: 2px solid #FF9F1C;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+input#end_search{
+    background-image: url("../images/enddestination.png");
+	border-left: 2px solid #FF9F1C;
+	border-right: 4px solid #FF9F1C;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+button#go_button {
+    background-color: #FF9F1C;
+    border: none;
+    color: white;
+    padding: 5px 20px 5px 20px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+button#go_button:hover {
+    background-color: #2EC4B6;
+	cursor: pointer;
+}
+
+button#go_button:focus {
+    outline: none;
 }
