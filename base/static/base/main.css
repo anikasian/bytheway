@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-    color: #FF9F1C;
+    color: #EB7F00;
     font-size: 100px;
     text-align: center;
 }
@@ -41,7 +41,7 @@ ul {
     margin-bottom: 60px;
     padding: 0;
     overflow: hidden;
-    background-color: #2EC4B6;
+    background-color: #8cd9db;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 
@@ -50,14 +50,14 @@ ul a {
     text-align: center;
     padding: 14px 16px;
     font-size: 30px;
-    color: #FBFCFC;
+    color: #F3FFE2;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 ul a:hover {
-    color: #FBFCFC;
+    color: #F3FFE2;
     text-decoration: none;
 }
 
@@ -69,6 +69,7 @@ li a {
     display: block;
     color: white;
     font-size: 16px;
+    font-weight: 700;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -78,7 +79,7 @@ li a {
 
 li a:hover, a:active {
     color: white;
-    background-color: #49D4C6;
+    background-color: #a3e2e3;
     text-decoration: none;
 }
 
@@ -116,8 +117,8 @@ input.search_bar, #start_search, #end_search {
     background-repeat: no-repeat;
     background-position: 2%;
     background-size: contain;
-	border-top: 4px solid #FF9F1C;
-	border-bottom: 4px solid #FF9F1C;
+	border-top: 4px solid #EB7F00;
+	border-bottom: 4px solid #EB7F00;
     padding-left: 42px;
     font-size: 17px;
 	color: #63717f;
@@ -125,22 +126,22 @@ input.search_bar, #start_search, #end_search {
 
 input#start_search {
     background-image: url("../images/startdestination.png");
-	border-left: 4px solid #FF9F1C;
-	border-right: 2px solid #FF9F1C;
+	border-left: 4px solid #EB7F00;
+	border-right: 2px solid #EB7F00;
 	border-top-left-radius: 30px;
 	border-bottom-left-radius: 30px;
 }
 
 input#end_search{
     background-image: url("../images/enddestination.png");
-	border-left: 2px solid #FF9F1C;
-	border-right: 4px solid #FF9F1C;
+	border-left: 2px solid #EB7F00;
+	border-right: 4px solid #EB7F00;
 	border-top-right-radius: 30px;
 	border-bottom-right-radius: 30px;
 }
 
-button#go_button {
-    background-color: #FF9F1C;
+a#go_button {
+    background-color: #EB7F00;
     border: none;
     color: white;
     padding: 5px 20px 5px 20px;
@@ -153,11 +154,11 @@ button#go_button {
     border-bottom-left-radius: 24px;
 }
 
-button#go_button:hover {
-    background-color: #2EC4B6;
+a#go_button:hover {
+    background-color: #8cd9db;
 	cursor: pointer;
 }
 
-button#go_button:focus {
+a#go_button:focus {
     outline: none;
 }

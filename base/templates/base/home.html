@@ -14,7 +14,53 @@
                     <th><input id="end_search"type="text" placeholder="End Destination"></th>
                 </tr>
             </table>
-            <button id="go_button" type="button">GO!</button>
+            <div id="survey_modal" class="modal">
+                <div class="modal-content" onclick="locationSelector()">
+                    <div class="modal-header">
+                        <!-- Close button -->
+                        <button id="close_button" data-dismiss="modal">&times;</button>
+                        <!-- Declaring the distance from route. -->
+                        <h2>Distance from the route:</h2>
+                        <input type = "text" class="distance_textbox" value="3" required = "" oninvalid="this.setCustomValidity('Please enter your distance')" oninput="setCustomValidity('')"/>
+                        <h3>miles</h3><br><br>
+                        <h2>Choose your type of road stops:</h2>
+                    </div>
+                    <!-- List of all selections -->
+                    <table id="selections">
+                        <tr>
+                            <td><input type="button" class="loc" value="Amusement Park"></td>
+                            <td><input type="button" class="loc" value="Campground"></td>
+                            <td><input type="button" class="loc" value="Night Club"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="loc" value="Aquarium"></td>
+                            <td><input type="button" class="loc" value="Casino"></td>
+                            <td><input type="button" class="loc" value="Park"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="loc" value="Art Gallery"></td>
+                            <td><input type="button" class="loc" value="Cemetery"></td>
+                            <td><input type="button" class="loc" value="Restaurant"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="loc" value="Bar"></td>
+                            <td><input type="button" class="loc" value="Movie Theatre"></td>
+                            <td><input type="button" class="loc" value="Shopping Mall"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="loc" value="Bakery"></td>
+                            <td><input type="button" class="loc" value="Museum"></td>
+                            <td><input type="button" class="loc" value="Zoo"></td>
+                        </tr>
+                    </table>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <input type="button" class="survey_button" value="Submit">
+                    </div>
+                </div>
+            </div>
+            <a href="" data-toggle="modal" data-target="#survey_modal" id="go_button">GO!</a>
         </div>
     </div>
+
+    <script src="{% static 'js/surveyModal.js' %}"></script>
 {% endblock content %}
